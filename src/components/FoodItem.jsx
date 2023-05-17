@@ -22,7 +22,9 @@ const FoodItem = (props) => {
           <span className="--food-location">
             {props.entry.restaurantLocation.name}{" "}
             {props.entry.restaurantLocation.state && (
-              <span className="state">(New York)</span>
+              <span className="state">
+                ({props.entry.restaurantLocation.state})
+              </span>
             )}
           </span>
         </div>
